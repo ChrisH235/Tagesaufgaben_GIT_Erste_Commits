@@ -1,5 +1,12 @@
+#Erstellung der gewünschten Klasse
+class Circle:
+    def __init__(self, x, y, radius):
+        self.x = x
+        self.y = y
+        self.radius = radius
 
-print("Moin!")
+    def __str__(self):
+        return f"Circle(x={self.x}, y={self.y}, radius={self.radius})"
 
-def meine_funktion():
-    print("Hallo")
+c = Circle(5, 10, 3)
+print(c)
